@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".ViewEmp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:weightSum="3">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_gravity="center"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/searchicon" />
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="120dp"
+            android:textSize="30sp"
+            android:layout_weight="2"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Find Employee"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/empID"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Employee ID"
+        android:fontFamily="@font/poppins_light"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="@color/purple" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Name:" />
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:layout_gravity="center_horizontal"
+        android:text="-"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_height="wrap_content"
+        android:text="Age:"/>
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/poppins_light"
+        android:text="-"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_height="wrap_content"
+        android:text="Salary:"/>
+    <TextView
+        android:id="@+id/txtSalary"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="-"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_height="wrap_content"
+        android:text="Marital Status:"/>
+    <TextView
+        android:id="@+id/txtMarried"
+        android:fontFamily="@font/poppins_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="-"/>
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="15sp"
+        android:text="Find Employee"
+        android:onClick="displayEmployeeData"
+        android:textColor="@android:color/background_light" />
+</LinearLayout>
+</LinearLayout>

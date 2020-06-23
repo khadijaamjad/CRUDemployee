@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".AddEmp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:weightSum="3">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/addicon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="2"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:text="Add employee"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/empID"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Employee ID"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="@color/purple" />
+
+    <EditText
+        android:id="@+id/empName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Employee Name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:textColor="@color/purple" />
+
+    <EditText
+        android:id="@+id/empAge"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Employee Age"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="@color/purple" />
+
+    <EditText
+        android:id="@+id/empSalary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Employee Salary"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:textColor="@color/purple" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:textSize="20sp"
+    android:fontFamily="@font/poppins_light"
+    android:text="Married"/>
+  <RadioGroup
+      android:id="@+id/marriedOpt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+             <RadioButton
+                 android:id="@+id/rbYes"
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:fontFamily="@font/poppins_light"
+                 android:text="Yes"/>
+              <RadioButton
+                  android:id="@+id/rbNo"
+                  android:text="No"
+                  android:fontFamily="@font/poppins_light"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"/>
+  </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/poppins_semibold"
+        android:onClick="btnAddClicked"
+        android:textSize="15sp"
+        android:text="Add Employee"
+        android:textColor="@android:color/background_light" />
+</LinearLayout>
+</LinearLayout>
